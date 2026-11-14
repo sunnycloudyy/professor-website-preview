@@ -1,0 +1,51 @@
+/* Shared editorial visual system · VCC Lab companion site */
+:root{--yc-ink:#202020;--yc-muted:#777;--yc-line:#e5e5e5;--yc-accent:#252525;--yc-page:#fff}
+html{scroll-behavior:smooth}body.yc-page{margin:0;background:#fff;color:var(--yc-ink);font-family:Arial,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;-webkit-font-smoothing:antialiased}
+.yc-wrap{width:min(1130px,calc(100% - 64px));margin:0 auto}
+.yc-header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.97);border-bottom:1px solid var(--yc-line);backdrop-filter:blur(12px)}
+.yc-header-inner{display:flex;align-items:center;justify-content:space-between;gap:30px;min-height:84px;padding:14px 0}
+.yc-brand{flex-shrink:0;line-height:1.45;text-decoration:none!important;color:#202020!important}
+.yc-brand strong{display:block;font-size:14px;font-weight:700;letter-spacing:.075em}
+.yc-brand small{display:block;color:#777;font-size:10px;letter-spacing:0;font-weight:400}
+.yc-header .yc-nav{display:flex;flex-wrap:wrap;gap:12px 19px;justify-content:flex-end;align-items:center;max-width:780px}
+.yc-header .yc-nav a{font-size:12px;font-weight:400;letter-spacing:0;color:#555!important;text-decoration:none!important;white-space:nowrap;text-transform:none;padding:4px 0;border-bottom:1px solid transparent}
+.yc-header .yc-nav a:hover,.yc-header .yc-nav a.yc-active{color:#202020!important;border-bottom:1px solid #202020}
+.yc-header .yc-nav a.yc-lab-link{color:#202020!important;font-weight:600;margin-left:6px}
+.yc-kicker{font-size:11px!important;letter-spacing:.16em!important;color:#777!important;font-weight:600!important;text-transform:uppercase!important}
+.yc-page-hero{padding:81px 0 65px;border-bottom:1px solid var(--yc-line);background:#fff}
+.yc-page-hero h1{font-size:clamp(45px,6.4vw,76px);font-weight:500;color:#202020;letter-spacing:-.055em;line-height:1.08;margin:16px 0 20px}
+.yc-page-hero p:not(.yc-kicker){font-size:14px;color:#777;margin:0}
+.yc-download{display:inline-block;margin-top:20px;padding-bottom:4px;border-bottom:1px solid #555;text-decoration:none;color:#252525;font-size:13px}
+.yc-home-hero{border-bottom:1px solid #e5e5e5}
+.yc-home-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(250px,.8fr);gap:70px;align-items:center;padding:89px 0 96px;min-height:550px}
+.yc-home-copy h1{font-size:clamp(48px,6.4vw,78px);letter-spacing:-.062em;font-weight:500;line-height:1.08;color:#202020;margin:22px 0}
+.yc-dot{color:#999}.yc-specialty{font-size:21px;color:#202020;font-weight:500;margin:0 0 16px}
+.yc-home-department{font-size:14px;color:#777;line-height:1.85}
+.yc-home-links{display:flex;gap:25px;flex-wrap:wrap;margin-top:36px}
+.yc-home-links a{font-size:13px;color:#333;border-bottom:1px solid #aaa;text-decoration:none;padding-bottom:4px}
+.yc-home-art{max-width:365px;justify-self:end;width:100%;aspect-ratio:3/4;overflow:hidden;background:#f5f5f5}
+.yc-home-art img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 20%}
+/* Preserve original Tailwind structure, refine spacing and typography */
+body.yc-page main{max-width:1130px!important;padding-top:70px!important;padding-bottom:96px!important}
+body.yc-page main h3{letter-spacing:-.025em}
+body.yc-page .section-divider{color:#202020!important;border-bottom:1px solid #dcdcdc!important;font-size:12px;letter-spacing:.12em;font-weight:700;padding-bottom:14px}
+body.yc-page .pub-year,body.yc-page .year-label{color:#202020!important;font-weight:600!important;font-size:27px!important}
+body.yc-page .pub-institution{color:#777!important;font-weight:500}
+body.yc-page .pub-title,body.yc-page .work-title,body.yc-page .cv-title{color:#202020!important;font-weight:600}
+body.yc-page .date-justify{color:#777!important}
+body.yc-page .research-card{box-shadow:none!important;transform:none!important;border:1px solid #e5e5e5!important;border-radius:0!important;background:#fff!important}
+body.yc-page .research-card:hover{border-color:#b6b6b6!important}
+body.yc-page .bg-blue-50{background:#f4f4f4!important}
+body.yc-page .text-\[\#003380\]{color:#555!important}
+body.yc-page .rounded-2xl{border-radius:0!important}
+body.yc-page .bg-gray-50{background:#fafafa!important}
+body.yc-page .border-gray-100{border-color:#e5e5e5!important}
+body.yc-page .lecture-image-container{border-radius:0!important}
+body.yc-page .lecture-title{color:#202020}
+body.yc-page .description-en{font-style:normal!important}
+body.yc-page .yc-news-header h2{font-size:24px!important;letter-spacing:-.03em}
+.yc-footer{border-top:1px solid #e5e5e5;background:#fff;padding:35px 0;color:#777}
+.yc-footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px;font-size:11px;letter-spacing:.035em}
+.yc-footer-inner a{font-size:11px;color:#333;text-decoration:none;border-bottom:1px solid #aaa;padding-bottom:3px}
+@media(max-width:960px){.yc-header-inner{align-items:start;flex-direction:column;gap:15px}.yc-header .yc-nav{justify-content:flex-start;gap:11px 19px}.yc-home-grid{gap:35px}}
+@media(max-width:700px){.yc-wrap{width:calc(100% - 36px)}.yc-header-inner{padding:18px 0;gap:10px}.yc-header .yc-nav{gap:8px 15px}.yc-header .yc-nav a{font-size:11px}.yc-page-hero{padding:60px 0 47px}.yc-page-hero h1{font-size:46px}.yc-home-grid{grid-template-columns:1fr;min-height:0;padding:58px 0;gap:34px}.yc-home-copy h1{font-size:51px}.yc-home-art{justify-self:start;max-width:285px}body.yc-page main{padding-top:52px!important;padding-bottom:70px!important}.yc-footer-inner{align-items:flex-start;flex-direction:column}}
